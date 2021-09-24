@@ -5,10 +5,22 @@
  */
 package reto0.view;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Matteo Fernández
+ * @author Miguel Sanchez
  */
-public class SwingImplementation {
+public class SwingImplementation extends JFrame implements View{
+    
+    
+
+    @Override
+    public void showGreeting(String greeting) {
+        JOptionPane.showMessageDialog(rootPane, greeting);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     
 }

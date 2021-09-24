@@ -17,6 +17,12 @@ public class ViewFactory {
         if(type.equalsIgnoreCase("Text")){
             view=new TextViewImplementation();
         }
+        if(type.equalsIgnoreCase("Swing")){
+            view=new SwingImplementation();
+        }
+        if(type.equalsIgnoreCase("FX")){
+            view=new JavaFXImplementation();
+        }
         return view;
     }
     

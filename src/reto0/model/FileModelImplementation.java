@@ -5,9 +5,8 @@
  */
 package reto0.model;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Properties;
+
+import java.util.ResourceBundle;
 
 /**
  *
@@ -15,14 +14,12 @@ import java.util.Properties;
  */
 public class FileModelImplementation implements Model{
     
-    Properties propiedades = new Properties();
-    InputStream saludoFile;
+    ResourceBundle archivoConfiguracion=ResourceBundle.getBundle("configuration.data");
 
     @Override
     public String getGreeting() throws Exception {
-        saludoFile= new FileInputStream("data.properties");
-        propiedades.load(saludoFile);
-        return propiedades.getProperty("greeting");   
+        String saludo=archivoConfiguracion.getString("greeting");
+        return saludo;   
     }
     
 }
