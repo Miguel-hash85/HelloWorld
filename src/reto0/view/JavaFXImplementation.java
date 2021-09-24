@@ -7,7 +7,7 @@ package reto0.view;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -16,12 +16,12 @@ import javafx.stage.Stage;
  * @author 2dam
  */
 public class JavaFXImplementation extends Application implements View{
-    
+    private static String saludo="";
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
+        Label lb=new Label(saludo);
         StackPane root = new StackPane();
-        root.getChildren().add(btn);
+        root.getChildren().add(lb);
         
         Scene scene = new Scene(root, 300, 250);
         
@@ -30,16 +30,11 @@ public class JavaFXImplementation extends Application implements View{
         primaryStage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        saludo=greeting;
+        launch(new String[1]);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
