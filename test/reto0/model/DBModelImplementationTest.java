@@ -5,6 +5,7 @@
  */
 package reto0.model;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 /**
@@ -12,12 +13,12 @@ import org.junit.Test;
  * @author Matteo Fernández
  */
 public class DBModelImplementationTest {
-    
-    public DBModelImplementationTest() {
-    }
 
     @Test
-    public void testSomeMethod() {
+    public void testDBModel() throws Exception {
+        DBModelImplementation dbmodel = new DBModelImplementation();
+        String greeting = dbmodel.getGreeting();
+        assertEquals(greeting, "Hello world!!!");
     }
-    
+
 }
