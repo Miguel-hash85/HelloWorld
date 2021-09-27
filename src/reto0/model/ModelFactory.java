@@ -6,21 +6,27 @@
 package reto0.model;
 
 /**
+ * The Model Factory is used to create a model
  *
  * @author Matteo Fernández
  */
 public class ModelFactory {
-    
-    
-    public static Model getModel(String type){
+
+    /**
+     * Gets a type and depending the type, one implementation is oppened
+     *
+     * @param type is a String
+     * @return the model
+     */
+    public static Model getModel(String type) {
         Model model = null;
-        if(type.equalsIgnoreCase("File")){
-            model=new FileModelImplementation();
+        if (type.equalsIgnoreCase("File")) {
+            model = new FileModelImplementation();
         }
-        if(type.equalsIgnoreCase("DataBase")){
-            model=new DBModelImplementation();
+        if (type.equalsIgnoreCase("DataBase")) {
+            model = new DBModelImplementation();
         }
         return model;
     }
-    
+
 }

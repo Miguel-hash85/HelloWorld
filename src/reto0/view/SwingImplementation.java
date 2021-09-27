@@ -9,13 +9,15 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * This is Swing Window implementation of the view tier
  * @author Miguel Sanchez
  */
 public class SwingImplementation extends JFrame implements View{
     
-    
-
+    /**
+     * This method shows the greeting
+     * @param greeting
+     */
     @Override
     public void showGreeting(String greeting) {
         JOptionPane.showMessageDialog(rootPane, greeting);

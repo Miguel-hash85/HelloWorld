@@ -5,7 +5,6 @@
  */
 package reto0.model;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,45 +13,53 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 /**
+ * This class is the implementation for the Database in the model tier
  *
  * @author Matteo Fernández
  */
-public class DBModelImplementation implements Model{
-    
-    private final ResourceBundle configFile=ResourceBundle.getBundle("configuration.conexion");
+public class DBModelImplementation implements Model {
+
+    private final ResourceBundle configFile = ResourceBundle.getBundle("configuration.conexion");
     private Connection con;
     private PreparedStatement stmt;
-    private ResultSet rs=null;
-    private final String selectGreeting="Select * from helloWorld";
-    private String saludo=null;
-    
-    private void openConnection() throws SQLException{
-        con = DriverManager.getConnection(configFile.getString("URL"), 
-                                            configFile.getString("USER"),
-                                            configFile.getString("PASSWORD"));
-		 
-	}
-    
-    private void closeConnection() throws SQLException{
-	if (stmt != null)
-		stmt.close();
-	if (con != null)
-		con.close();
-	}
-    
+    private ResultSet rs = null;
+    private final String selectGreeting = "Select * from helloWorld";
+    private String saludo = null;
 
+    private void openConnection() throws SQLException {
+        con = DriverManager.getConnection(configFile.getString("URL"),
+                configFile.getString("USER"),
+                configFile.getString("PASSWORD"));
+    }
+
+    private void closeConnection() throws SQLException {
+        if (stmt != null) {
+            stmt.close();
+        }
+        if (con != null) {
+            con.close();
+        }
+    }
+
+    /**
+     * This method is used for oppening a conection in a database to get a
+     * string that contains the greeting
+     * @return returns the greeting
+     * @throws Exception
+     */
     @Override
     public String getGreeting() throws Exception {
-        
+
         this.openConnection();
         stmt = con.prepareStatement(selectGreeting);
         rs = stmt.executeQuery();
-        if (rs.next())
-            saludo=rs.getString("saludo");
+        if (rs.next()) {
+            saludo = rs.getString("saludo");
+        }
         this.closeConnection();
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); 
+        //To change body of generated methods, choose Tools | Templates.
         return saludo;
-        
     }
-    
+
 }

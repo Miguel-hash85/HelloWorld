@@ -5,21 +5,22 @@
  */
 package reto0.model;
 
-
 import java.util.ResourceBundle;
 
 /**
+ * This method is used for getting a string that contains the greeting from a
+ * File
  *
  * @author Matteo Fernández
  */
-public class FileModelImplementation implements Model{
-    
-    ResourceBundle archivoConfiguracion=ResourceBundle.getBundle("configuration.data");
+public class FileModelImplementation implements Model {
+
+    ResourceBundle archivoConfiguracion = ResourceBundle.getBundle("configuration.data");
 
     @Override
     public String getGreeting() throws Exception {
-        String saludo=archivoConfiguracion.getString("greeting");
-        return saludo;   
+        String saludo = archivoConfiguracion.getString("greeting");
+        return saludo;
     }
-    
+
 }

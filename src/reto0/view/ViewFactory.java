@@ -6,24 +6,30 @@
 package reto0.view;
 
 /**
+ * Create diferent views
  *
  * @author Matteo Fernández
  */
 public class ViewFactory {
-    
-    
-    public static View getView(String type){
-        View view=null;
-        if(type.equalsIgnoreCase("Text")){
-            view=new TextViewImplementation();
+
+    /**
+     * Gets differents types to create a new view
+     *
+     * @param type
+     * @return the new expecified view
+     */
+    public static View getView(String type) {
+        View view = null;
+        if (type.equalsIgnoreCase("Text")) {
+            view = new TextViewImplementation();
         }
-        if(type.equalsIgnoreCase("Swing")){
-            view=new SwingImplementation();
+        if (type.equalsIgnoreCase("Swing")) {
+            view = new SwingImplementation();
         }
-        if(type.equalsIgnoreCase("FX")){
-            view=new JavaFXImplementation();
+        if (type.equalsIgnoreCase("FX")) {
+            view = new JavaFXImplementation();
         }
         return view;
     }
-    
+
 }

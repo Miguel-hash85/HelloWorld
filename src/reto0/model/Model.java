@@ -6,11 +6,17 @@
 package reto0.model;
 
 /**
+ * This interface declares the method getGreeting
  *
  * @author Matteo Fernández
  */
 public interface Model {
-    
-    public String getGreeting () throws Exception;
-    
+
+    /**
+     * This method is going to be used by the controller
+     *
+     * @return String the greeting
+     * @throws Exception
+     */
+    public String getGreeting() throws Exception;
 }

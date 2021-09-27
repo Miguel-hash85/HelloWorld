@@ -6,9 +6,16 @@
 package reto0.view;
 
 /**
+ * This interface declares the method showGreeting
  *
  * @author Matteo Fernández
  */
 public interface View {
-        public void showGreeting(String greeting);
+
+    /**
+     * This method is going to be used by the controller
+     *
+     * @param greeting
+     */
+    public void showGreeting(String greeting);
 }

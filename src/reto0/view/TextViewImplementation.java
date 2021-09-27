@@ -6,12 +6,14 @@
 package reto0.view;
 
 /**
+ * This is the graphic mode implementation of the view tier
  *
  * @author Matteo Fernández
  */
-public class TextViewImplementation implements View{
+public class TextViewImplementation implements View {
 
     /**
+     * This method gets the greeting in a string way and prints it
      *
      * @param greeting
      */

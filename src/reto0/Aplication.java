@@ -13,8 +13,8 @@ import reto0.view.View;
 import reto0.view.ViewFactory;
 
 /**
- *
- * @author 2dam
+ * This is the main class that is used for run the app
+ * @author Miguel Sanchez
  */
 public class Aplication {
 
@@ -27,7 +27,6 @@ public class Aplication {
         View view=ViewFactory.getView(archivoConfiguracion.getString("viewImplementation"));
         Controller controller = new Controller();
         controller.run(model, view);
-        
-    }
+        }
 
 }
