@@ -11,7 +11,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * This class is a test 
+ * This class is a test
+ *
+ * 
  * @author Miguel Sanchez
  */
 public class FileModelImplementationTest {
