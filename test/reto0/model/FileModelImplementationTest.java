@@ -11,11 +11,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * This class is a test 
  * @author Miguel Sanchez
  */
 public class FileModelImplementationTest {
 
+    /**
+     * This test proofs that we can get the greeting from the file
+     */
     @Test
     public void testGetGreeting() {
 
