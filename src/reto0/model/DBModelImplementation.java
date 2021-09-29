@@ -40,7 +40,11 @@ public class DBModelImplementation implements Model{
 		con.close();
 	}
     
-
+    /**
+     *
+     * @return This method return the string "Get greeting" from the Data Base
+     * @throws Exception
+     */
     @Override
     public String getGreeting() throws Exception {
         

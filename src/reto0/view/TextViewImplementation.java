@@ -14,6 +14,7 @@ public class TextViewImplementation implements View{
     /**
      *
      * @param greeting
+     * this method shows greeting into cosole
      */
     @Override
     public void showGreeting(String greeting) {

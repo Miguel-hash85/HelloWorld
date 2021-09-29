@@ -11,7 +11,11 @@ package reto0.view;
  */
 public class ViewFactory {
     
-    
+    /**
+     *
+     * @param type
+     * @return this method return a View, depends on the sent type.
+     */
     public static View getView(String type){
         View view=null;
         if(type.equalsIgnoreCase("Text")){

@@ -12,12 +12,13 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author Miguel Sanchez
  */
-public class FileModelImplementationTest {
+public class FileModelImplementationTestGreetingFile {
     
-    
-
+    /**
+     *
+     */
     @Test
     public void testGetGreeting() {
         
@@ -26,7 +27,7 @@ public class FileModelImplementationTest {
             String saludo = modelo.getGreeting();
             assertEquals("Hello world!!!",saludo);
         } catch (Exception ex) {
-            Logger.getLogger(FileModelImplementationTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FileModelImplementationTestGreetingFile.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }

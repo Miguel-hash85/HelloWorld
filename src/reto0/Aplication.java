@@ -19,7 +19,8 @@ import reto0.view.ViewFactory;
 public class Aplication {
 
     /**
-     * @param args the command line arguments
+     * @param args
+     * This aplication show the message Hello world in diferent ways deppending on the configuration settings selected
      */
     public static void main(String[] args) {
         ResourceBundle archivoConfiguracion=ResourceBundle.getBundle("configuration.data");

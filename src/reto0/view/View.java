@@ -10,5 +10,11 @@ package reto0.view;
  * @author Matteo Fernández
  */
 public interface View {
-        public void showGreeting(String greeting);
+
+    /**
+     *
+     * @param greeting
+     * this method shows greeting in diferents ways depending on the view selected
+     */
+    public void showGreeting(String greeting);
 }

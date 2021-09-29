@@ -11,6 +11,11 @@ package reto0.model;
  */
 public interface Model {
     
+    /**
+     *
+     * @return This method receives greeting from database or configuration file
+     * @throws Exception
+     */
     public String getGreeting () throws Exception;
     
 }

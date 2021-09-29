@@ -30,6 +30,11 @@ public class JavaFXImplementation extends Application implements View{
         primaryStage.show();
     }
 
+    /**
+     *
+     * @param greeting
+     * this method shows the greeting into java fx window
+     */
     @Override
     public void showGreeting(String greeting) {
         saludo=greeting;

@@ -16,6 +16,11 @@ public class FileModelImplementation implements Model{
     
     ResourceBundle archivoConfiguracion=ResourceBundle.getBundle("configuration.data");
 
+    /**
+     *
+     * @return This method return the string "Get greeting" from the configuration file
+     * @throws Exception
+     */
     @Override
     public String getGreeting() throws Exception {
         String saludo=archivoConfiguracion.getString("greeting");

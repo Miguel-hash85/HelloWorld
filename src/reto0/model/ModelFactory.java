@@ -11,7 +11,11 @@ package reto0.model;
  */
 public class ModelFactory {
     
-    
+    /**
+     *
+     * @param type
+     * @return This method returns the type of model depending on the string received
+     */
     public static Model getModel(String type){
         Model model = null;
         if(type.equalsIgnoreCase("File")){
