@@ -9,6 +9,10 @@ package reto0.model;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * This class returns the diferent models
+ */
 public class ModelFactory {
     
     /**

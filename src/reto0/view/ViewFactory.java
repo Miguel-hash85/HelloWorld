@@ -9,6 +9,10 @@ package reto0.view;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * This class return the diferent views
+ */
 public class ViewFactory {
     
     /**

@@ -15,6 +15,10 @@ import javafx.stage.Stage;
  *
  * @author Miguel Sanchez
  */
+/**
+ * 
+ * This is the class used to view the message in JavaFX implementation
+ */
 public class JavaFXImplementation extends Application implements View{
     private static String saludo="";
     @Override

@@ -17,6 +17,10 @@ import java.util.ResourceBundle;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * This class implements the Data Base model
+ */
 public class DBModelImplementation implements Model{
     
     private final ResourceBundle configFile=ResourceBundle.getBundle("configuration.conexion");

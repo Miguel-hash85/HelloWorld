@@ -13,6 +13,10 @@ import javax.swing.JOptionPane;
  *
  * @author Miguel Sanchez
  */
+/**
+ * 
+ * This is the class used to view the message in Swing implementation
+ */
 public class SwingImplementation extends JFrame implements View{
     
     /**

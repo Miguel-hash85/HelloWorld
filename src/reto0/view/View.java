@@ -9,6 +9,10 @@ package reto0.view;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * View Interface
+ */
 public interface View {
 
     /**

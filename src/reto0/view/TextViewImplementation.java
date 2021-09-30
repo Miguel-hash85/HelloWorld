@@ -16,6 +16,10 @@ public class TextViewImplementation implements View{
      * @param greeting
      * this method shows greeting into cosole
      */
+    /**
+ * 
+ * This is the class used to view the message in Text implementation
+ */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);

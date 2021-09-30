@@ -16,6 +16,10 @@ import reto0.view.ViewFactory;
  *
  * @author Miguel Sanchez
  */
+/**
+ * 
+ * This is the main class of our aplication.
+ */
 public class Aplication {
 
     /**

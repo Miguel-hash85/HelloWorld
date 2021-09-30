@@ -12,6 +12,10 @@ import java.util.ResourceBundle;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * This class implements the File model
+ */
 public class FileModelImplementation implements Model{
     
     ResourceBundle archivoConfiguracion=ResourceBundle.getBundle("configuration.data");
