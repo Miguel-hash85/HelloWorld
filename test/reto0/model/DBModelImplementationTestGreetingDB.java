@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author Miguel Sanchez
  */
 public class DBModelImplementationTestGreetingDB {
     
@@ -20,7 +20,7 @@ public class DBModelImplementationTestGreetingDB {
      *
      */
     @Test
-    public void testSomeMethod() {
+    public void testDBModelImplementationMessage() {
         
         
         

@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author 2dam
+ * @author Miguel Sanchez
  */
 public class JavaFXImplementation extends Application implements View{
     private static String saludo="";

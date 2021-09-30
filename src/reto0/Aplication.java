@@ -14,7 +14,7 @@ import reto0.view.ViewFactory;
 
 /**
  *
- * @author 2dam
+ * @author Miguel Sanchez
  */
 public class Aplication {
 
