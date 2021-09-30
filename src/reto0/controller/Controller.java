@@ -15,6 +15,10 @@ import reto0.view.View;
  *
  * @author Matteo Fernández
  */
+/**
+ * 
+ * That class receives a model and a view, and returns them to the Aplication class
+ */
 public class Controller {
     
 

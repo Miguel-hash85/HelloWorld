@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reto0.view;
 /**
  * This package contains all view clases(interface, factory and implementations)
  */
+package reto0.view;
+
